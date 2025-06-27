@@ -141,13 +141,13 @@ class _CricketGameScreenState extends State<CricketGameScreen> {
             padding: const EdgeInsets.symmetric(vertical: 6.0),
             child: SizedBox(
               width: 70,
-              height: 50,
+              height: 70,
               child: CustomPaint(
                 painter: HitsPainter(hitsMap[target]!),
                 child: Center(
                   child: Text(
                     target,
-                    style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
@@ -182,7 +182,7 @@ Widget build(BuildContext context) {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  Expanded(child: buildTargetColumn(player1Hits, true)),
+                  buildTargetColumn(player1Hits, true),
                 ],
               ),
             ),
@@ -198,7 +198,7 @@ Widget build(BuildContext context) {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  Expanded(child: buildTargetColumn(player2Hits, false)),
+                  buildTargetColumn(player2Hits, false),
                 ],
               ),
             ),
