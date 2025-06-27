@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Padding(
         padding: const EdgeInsets.all(24.0),
         child: GridView.count(
-          crossAxisCount: 2,
+          crossAxisCount: 1,
           mainAxisSpacing: 20,
           crossAxisSpacing: 20,
           childAspectRatio: buttonWidth / 70,
@@ -167,12 +167,13 @@ Widget build(BuildContext context) {
     ),
     body: SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 30.0),
         child: Row(
           children: [
             Expanded(
               child: Column(
                 children: [
+  
                   TextField(
                     controller: player1Controller,
                     decoration: const InputDecoration(
